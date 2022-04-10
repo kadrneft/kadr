@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Студия КАДР</title>
+    <link rel="shortcut icon" href="res/ico.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+
+    <script>
+    function chpok(id){
+        elem = document.getElementById(id); //находим блок div по его id, который передали в функцию
+        state = elem.style.display; //смотрим, включен ли сейчас элемент
+        if (state =='') elem.style.display='none'; //если включен, то выключаем
+        else elem.style.display=''; //иначе - включаем
+}
+</script>
+
+</head>
+<body>
+<div id="container">
+    <div id="header">
+        <div class="logotip"><p class="logo">Детская телестудия </p> &nbsp;<p class="logop">КАДР</p></div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Проекты</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>    
+        </div>
+        <div class="burger">  
+                <button onclick="chpok('menuphone')">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </button>
+        </div>
+    </div>   
+    
+
+
+
+    <div id="content">
+        <div></div>
+         <div id="menuphone" style="display: none;">
+            <ul align="left" >
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Проекты</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>           
+        </div>
+
+    
+    <div class="slider" >
+        <img src="res/photo/mpk.jpg" width="100%">
+        <div class="text">
+            <p>Будем делать кино!</p>
+            
+        </div>
+
+    </div>
+    <p class="zag">Лучшие работы:</p>
+    <div class="popular" align="center" style="">
+        
+        <div class="stdblock">
+            <p align="center">Шахматы</p>
+            <img class="stdblockimg" src="res/photo/mpk.jpg">
+        </div>
+        
+        <div class="stdblock">
+            <p align="center">Школьное питание</p>
+            <img class="stdblockimg" src="res/photo/mpk.jpg">
+        </div>
+        <div class="stdblock">
+            <p align="center">Глава республики</p>
+            <img class="stdblockimg" src="res/photo/mpk.jpg">
+        </div>
+    </div>
+   
+   <div class="formblock">
+    <div class="formot">
+        <p class="zag" style="color:">Расскажи о себе</p>
+        <form class="zaiavka">
+        <div><p></p><input id="name" name="name" placeholder="Имя"/></div>
+        <div><p></p><input id="surname" name="surname" placeholder="Фамилия"/></div>
+        <div><p></p><input id="email" name="email" placeholder="Почта"/></div>
+        <div style="width:400px;margin-top: 3vh;"><p></p><input style="width:70%;height:100px" id="message" name="message" placeholder="Сообщение"/></div>
+        </form>
+        <button><p style="margin:1vh 1vh 1vh 1vh;">Отправить</p></button>
+    </div>
+   </div> 
+    <div class="lastNews">
+    <p class="zag">Последние новости:</p>
+    
+    <div class="popular" align="center" style="">
+        
+        <div class="stdblocknews1">
+            <p align="center">Шахматы</p>
+            <img class="stdblocknewsimg" src="res/photo/mpk.jpg">
+        </div>
+        
+        <div class="stdblocknews2">
+            <p align="center">Школьное питание</p>
+            <img class="stdblocknewsimg" src="res/photo/mpk.jpg">
+        </div>
+        <div class="stdblocknews3">
+            <p align="center">Глава республики</p>
+            <img class="stdblocknewsimg" src="res/photo/mpk.jpg">
+        </div>
+    </div>
+   </div> 
+
+
+
+
+
+
+
+    </div>     
+    <div id="clear">    
+    </div>                           
+    <div id="footer">
+    
+    <div style="align:center"><p style="color:white">МБУ ДО ЦТТДиЮ "Технопарк" г.Нефтекамск 2022</p></div>
+    <div class="logs">
+    
+    </div>
+    </div>
+</div>
+</body>
+</html>

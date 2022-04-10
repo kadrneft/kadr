@@ -1,0 +1,256 @@
+<style type="text/css"> 
+
+*{
+margin: 0;
+padding: 0;
+}
+
+.logo{color:white;float: left; font-size:23px;font-family:Lucida Sans Unicode;margin-top:15px;}
+.logop{color:white;float:right;font-size:23px;font-family:Lucida Sans Unicode;margin-top:15px;}
+.logs a{float: right;}
+ body {	
+ 	font-family:Lucida Sans Unicode;
+	margin: 0;
+	padding: 0;
+    background: #FFF;
+    color: #000;
+    
+    font-size: 14px;
+}
+
+#header {
+	float: right;
+    background: #626262;
+    width: 100%;
+    height: 55px;
+    font-color: white;
+    width: 100%; 
+    position: fixed;
+    top: 0;
+    z-index:99;
+
+}
+.logotip{float: left;
+	margin-left:15%;
+  	
+
+}
+.menu{
+	float:left;
+	margin-left:15%;
+	}
+.menu ul li{
+	float:left;
+	margin-left:4vw;
+	color: red;
+	list-style-type: none;
+	margin-top: 0.5vh;
+
+}
+.menu ul li a{
+	text-decoration: none;
+	font-size:20px;
+	color: white;
+}
+
+
+ 
+#container {
+	position:absolute;
+	top:0px;
+	left:0px;
+    background:; 
+    text-align: center;
+    width: 100%; 
+}
+
+#content {
+     background: #DCDCDC;
+	 float: right;
+     width: 100%;
+     
+}
+
+.slider{
+    position: relative;
+    display: inline-block;     
+    width:100%;
+
+}
+.slider .text{
+        position: absolute;
+        z-index: 97;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        top: 40%; 
+        width: 100%;
+        height:;
+       	background: rgba(0, 0, 0, 0.3);
+    }
+.slider .text p{
+		font-size:30px;
+        color:white;
+    }
+
+#clear {
+     clear: both;
+}
+ 
+#footer {
+	float: right;
+    background: #303030;
+	width: 100%;
+	height: 10VH;
+}
+.burger {
+    width: 40px;
+    height: 40px;
+    margin-top: 0.7vh;
+    display: none;
+    top:0px;
+	right: 0px;
+}
+#menuphone{
+	position: fixed;
+	
+    top:0px;
+	left:0vw; 
+	z-index: 999;
+	background: #626262;
+	font-color: white;
+	height: 100%;
+	width: 200px;
+	
+}
+#menuphone ul li{
+	list-style-type: none;
+	margin-top: 1vh;
+	left:0vw; 
+}
+
+#menuphone ul li a{
+	text-decoration: none;
+	font-size:20px;
+	color: white;
+}
+
+.popular{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;	
+    margin-bottom: 1vh;
+}
+.stdblock {
+	list-style-type: none;
+	margin-top: 1vh;
+
+	margin-left: 0.5vw; 
+	float:left;
+	width:31vw;
+	height:25vw;
+	background-color:#626262;
+}
+.stdblockimg{height:20vw;width:30vw;}
+
+.formblock{
+	width:100%;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   
+}
+.formot{
+	width:50vw;
+	margin-top: 10vh;
+	background-color: white;
+	border: solid #626262;
+}
+
+.zag{font-size:23px;}
+
+.zaiavka{display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;	}
+.formot button{font-size:15px;margin-top: 1vw; margin-bottom: 1vw;}
+.zaiavka input{font-size:20px;width:230px;}
+.zaiavka div{font-size:20px;float: left;width:250px;}
+
+.stdblocknews1 {
+	list-style-type: none;
+	margin-top: 1vh;
+
+	margin-left: 0.5vw; 
+	float:left;
+	width:400px;
+	height:250px;
+	background-color:#626262;
+}
+.stdblocknews2 {
+	list-style-type: none;
+	margin-top: 1vh;
+
+	margin-left: 0.5vw; 
+	float:left;
+	width:400px;
+	height:250px;
+	background-color:#626262;
+}
+.stdblocknews3 {
+	list-style-type: none;
+	margin-top: 1vh;
+
+	margin-left: 0.5vw; 
+	float:left;
+	width:400px;
+	height:250px;
+	background-color:#626262;
+}
+.stdblocknewsimg{width:200px;
+	height:150px;}
+
+@media only screen and (max-width: 1213px), only screen and (max-device-width:1213px) {
+	.menu{
+	display: none;
+	}
+	.logo{display: none;}
+	
+	.burger button {
+		height: 40px;
+    	width: 40px;
+    	background-color:#626262;
+    	border: none;
+	}
+	.burger button div{
+		background-color:white;
+		height: 8px;
+		width: 40px;
+		
+		margin-bottom: 5px;
+
+	}
+	.burger {
+        display: inline-block;
+        position:absolute;
+        top:0px;
+		right: 13px;
+    }
+    
+    .stdblocknews3 {
+	display: none;
+}
+}
+@media only screen and (max-width: 800px), only screen and (max-device-width:800px) {
+	.stdblocknews3 {
+	display: none;
+}
+.stdblocknews2 {
+	display: none;
+}
+
+}
+
+</style>
